@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Libre+Baskerville:ital@0;1&display=swap"
+        rel="stylesheet">
+    <title>Login Page</title>
+    <style>
+
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: rgb(2, 30, 61);
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            text-align: left;
+            background-color: rgb(35, 78, 218);
+            height: 70px;
+            padding: 30px;
+            margin-bottom: 10px;
+        }
+
+        .d1 {
+            flex: 1;
+            font-size: larger;
+        }
+
+        a {
+            margin: 15px;
+            color: white;
+        }
+
+        .d2 {
+            text-align: right;
+            margin-right: 80px;
+        }
+
+        .container_1 {
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+            background-image: url(back.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            background-size: 100%;
+            height: 600px;
+        }
+
+        .d3 {
+            flex: 5;
+            padding-top: 150px;
+            padding-right: 90px;
+            color: white;
+            font-size: larger;
+            font-family: 'Dancing Script', cursive;
+            font-family: 'Libre Baskerville', serif;
+        }
+
+        .d4 {
+            flex: 1;
+            padding-right: 50px;
+            padding-left: 50px;
+            padding-top: 60px;
+            margin: 40px;
+            font-size: larger;
+            color: white;
+        }
+
+        .login {
+            width: 80px;
+        }
+
+        .container_2 {
+            background-color: rgb(2, 30, 61);
+        }
+
+        .d5 {
+            text-align: center;
+            color: white;
+            margin-bottom: 30px;
+        }
+
+        .d6 {
+            color: white;
+            border-radius: 4px;
+            text-align: center;
+            margin-left: 270px;
+            margin-right: 280px;
+            box-shadow: 60px 40px 20px;
+            border: 2px solid black;
+        }
+
+        table {
+            background-color: rgb(16, 72, 136);
+        }
+        .submit {
+            width: 150px;
+        }
+        .container_3{
+            
+            margin-top: 150px;
+            display: flex;
+            justify-content: space-between;
+            background-color: rgb(35, 78, 218);
+        }
+        .d7{
+            flex: 3;
+            color: white;
+        }
+        .d8{
+            flex: 1;
+            text-align: right;
+            padding-top: 10px;
+        }
+        .search{
+            border-radius: 4px;
+            width: 200px;
+            height: 30px;
+            text-align: center;
+        }
+        .username{
+            border-radius: 4px;
+            width: 200px;
+            height: 30px;
+        }
+        .password{
+            border-radius: 4px;
+            width: 200px;
+            height: 30px;
+        }
+        .signup{
+            border-radius: 4px;
+            width: 80px;
+            height: 35px;
+        }
+        .login{
+            border-radius: 4px;
+            width: 80px;
+            height: 35px;
+        }
+        .name{
+            border-radius: 4px;
+            width: 200px;
+            height: 25px;
+        }
+        .email{
+            border-radius: 4px;
+            width: 200px;
+            height: 25px;
+        }
+        .number{
+            border-radius: 4px;
+            width: 200px;
+            height: 25px;
+        }
+        .msg{
+            border-radius: 4px;
+            width: 650px;
+            text-align: center;
+        }
+        .submit{
+            border-radius: 4px;
+            width: 100px;
+            height: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" id="container">
+        <div class="d1">
+            <a href="#container">Home</a>
+            <a href="#about">About</a>
+            <a href="#message">Message</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="d2">
+            <form action="">
+                <input type="text" placeholder="search" id="search" class="search">
+                <label for="search"><img src="search.jpg" alt="search" width="33px"></label>
+            </form>
+        </div>
+    </div>
+
+    <div class="container_1" id="about">
+        <div class="d3">
+            <p><b><i>MySelf! <br>
+                        Brijesh Yadav. <br>
+                        I have created my First Ever Login Page. <br>
+                        Leave message below. Even you can contact me with below details.</i></b></p>
+        </div>
+        <div class="d4">
+            <form action="">
+                <table height="250px" width="350px">
+                    <th colspan="2" style="background-color: rgb(12, 73, 110);">Login Page</th>
+                    <tr style="background-color: rgb(52, 165, 218);">
+                        <td><label for="username"><b>Username:</b></label></td>
+                        <td><input type="text" class="username" id="username"></td>
+                    </tr>
+                    <tr style="background-color: rgb(52, 165, 218);">
+                        <td><label for="password"><b>Password:</b></label></td>
+                        <td><input type="password" name="password" id="password" class="password"></td>
+                    </tr>
+                    <tr style="text-align: right; font-size: medium; background-color: rgb(52, 165, 218);">
+                        <td colspan="2"><b><a href="">Forget Password!</a></b></td>
+                    </tr>
+                    <tr style="background-color: rgb(81, 132, 199);">
+                        <td><button class="signup" id="signup"><b>Sign Up!</b></button></td>
+                        <td><button id="login" class="login"><b>Login</b></button></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+    <div class="container_2" id="message">
+        <div class="d5">
+            <h1><b>Leave Message!!!</b></h1>
+        </div>
+        <div class="d6">
+            <form action="">
+                <table align="center" cellspacing="8px" width="800px" class="table_1">
+                    <tr>
+                        <td><label for="name"><b>Name</b></label></td>
+                        <td><input type="text" class="name" id="name"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email"><b>Email</b></label></td>
+                        <td><input type="email" class="email" id="email"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="number"><b>Contact No.</b></label></td>
+                        <td><input type="number" class="number" id="number"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><textarea name="message" id="message" cols="60"
+                                rows="10" class="msg">Write your message!</textarea></td>
+                    </tr>
+                    <tr align="center">
+                        <td colspan="2"><button class="submit" id="submit"><b>Submit!</b></button></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+    <div class="container_3" id="contact">
+        <div class="d7">
+            <tt>Sai Krupa, Rahiwasi Sangh, Behind Vijay Nagar, Bandra East, Mumbai - 400051. <br>
+                Contact: 9867839043 / 7977003682 <br>
+                Email: brijeshyadav9811@gmail.com
+            </tt>
+        </div>
+        <div class="d8">
+            <a href="https://mail.google.com/mail/"><img src="g.png" alt="Gmail" width="50px"></a>
+            <a href="https://whatsapp.com/dl/9867839043"><img src="whatsapp.jpg" alt="Whatsapp" width="30px"></a>
+            <a href="https://www.facebook.com/brijesh.yadav.319247?mibextid=ZbWKwL"><img src="facebook.png" alt="Facebook" width="30px"></a>
+            <a href="https://instagram.com/y_brij3sh?igshid=MzNlNGNkZWQ4Mg=="><img src="instagram.png" alt="Instagram" width="33px"></a>
+            <a href=""></a>
+        </div>
+    </div>
+
+</body>
+
+</html>
